@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Precios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Comparador de Precios</h1>
+    <div class="form-container">
+        <input type="number" id="cost" placeholder="Costo en CLP" />
+        <input type="number" id="value" placeholder="Volumen o Peso" />
+        <select id="unit">
+            <option value="cc">cc</option>
+            <option value="ml">ml</option>
+            <option value="L">L</option>
+            <option value="gr">gr</option>
+            <option value="Kg">Kg</option>
+        </select>
+        <button onclick="addProduct()">AGREGAR PRODUCTO</button>
+    </div>
+    <ul id="product-list"></ul>
+    <script src="scripts.js"></script>
+</body>
+</html>
